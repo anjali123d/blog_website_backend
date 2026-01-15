@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://frontend-five-rouge-89.vercel.app"
+  "https://blog-website-frontend-eight.vercel.app"
 ];
 
 app.use(cors({
