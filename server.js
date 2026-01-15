@@ -37,9 +37,12 @@ app.use(cors({
 const PORT = process.env.PORT || 3000;
 
 // Routes
+app.get('/', (req, res) => {
+  res.send("backend is working...");
+})
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/blog", blogRoute);
-app.use("/api/v1/comment", commentRoute );
+app.use("/api/v1/comment", commentRoute);
 
 // Start server AFTER DB connects
 connectDB()
